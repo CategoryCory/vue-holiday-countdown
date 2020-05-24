@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Counter :year="2025" :month="4" :date="29" :hour="0" :minute="0" :second="0" :millisecond="0" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Counter from "@/components/Counter.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Counter
   }
-}
+};
 </script>
 
 <style>
